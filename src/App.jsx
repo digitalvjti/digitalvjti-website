@@ -1,4 +1,3 @@
-import Test from "./Test";
 import "./app.scss";
 import Contact from "./components/contact/Contact";
 import Cursor from "./components/cursor/Cursor";
@@ -32,12 +31,7 @@ const App = () => {
       </section>
       <section id="CoreMembers">
         <Core />
-      </section>
-
-
-      {/* Framer Motion Crash Course
-      <Test/>
-    <Test/> */}
+      </section> 
     </div>
   );
 };

@@ -1,6 +1,8 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
-
+import Particles from "react-particles";
+import { loadSlim } from "tsparticles-slim";
+import { useCallback } from "react";
 const textVariants = {
   initial: {
     x: -500,
@@ -31,52 +33,49 @@ const sliderVariants = {
     x: "-220%",
     transition: {
       repeat: Infinity,
-      repeatType:"mirror",
+      repeatType: "mirror",
       duration: 20,
     },
   },
 };
 
 const Hero = () => {
+  const particlesInit = useCallback(async (engine) => {
+    console.log(engine);
+    await loadSlim(engine);
+  }, []);
+  const particlesLoaded = useCallback(async (container) => {
+    console.log(container);
+  }, []);
   return (
-    <div className="hero">
-      <div className="wrapper">
-        <motion.div
-          className="textContainer"
-          variants={textVariants}
-          initial="initial"
-          animate="animate"
-        >
-          <motion.h2 variants={textVariants}>Empowering your digital dreams</motion.h2>
-          <motion.h1 variants={textVariants}>
-           Digital VJTI 
-          </motion.h1>
-          <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              See the Latest Works
-            </motion.button>
-            <motion.button variants={textVariants}>Contact US</motion.button>
-          </motion.div>
-          {/* <motion.img
-            variants={textVariants}
-            animate="scrollButton"
-            src="/scroll.png"
-            alt=""
-          /> */}
-        </motion.div>
+    <motion.div className="hero" style={{ textAlign: "center" }}>
+      <motion.div style={{ marginBottom: "4vh" }}>
+        <motion.h2>Empowering your digital dreams!!</motion.h2>
+      </motion.div>
+      <div className="imageContainer">
+        <img
+          src="https://socialgroup.vjti.ac.in/Assets/Allimages/Digital/digital.png"
+          alt=""
+        />
       </div>
+      <motion.h1 variants={textVariants} style={{ fontSize: "100px" }}>
+        Digital VJTI
+      </motion.h1>
       <motion.div
         className="slidingTextContainer"
         variants={sliderVariants}
         initial="initial"
         animate="animate"
       >
-        Create content to improve digital reach of VJTI 
+        Create content to improve digital reach of VJTI
       </motion.div>
-      <div className="imageContainer">
-        <img src="https://socialgroup.vjti.ac.in/Assets/Allimages/Digital/digital.png" alt="" />
-      </div>
-    </div>
+      <Particles
+        id="tsparticles"
+        url="http://localhost:5173/src/particles.json"
+        init={particlesInit}
+        loaded={particlesLoaded}
+      />
+    </motion.div>
   );
 };
 
