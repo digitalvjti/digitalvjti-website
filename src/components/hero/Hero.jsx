@@ -71,7 +71,7 @@ const Hero = () => {
       </motion.div>
       <Particles
         id="tsparticles"
-        url="http://localhost:5173/src/particles.json"
+        url="../../src/particles.json"
         init={particlesInit}
         loaded={particlesLoaded}
       />
