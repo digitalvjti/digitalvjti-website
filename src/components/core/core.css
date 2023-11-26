@@ -6,42 +6,32 @@
     margin: 0;
     padding: 0;
   }
-
-
-  body{
-    overflow-x: hidden;
-  }
-  
   .event-title {
     text-align: center; /* Center the text horizontally */
-    margin-top: 2rem; /* Add some top margin for spacing */
-    font-size: 3.5rem; /* Adjust the font size as needed */
+    margin-top: 20px; /* Add some top margin for spacing */
+    font-size: 50px; /* Adjust the font size as needed */
      /* Change the text color if desired */
     /* Add any other styles you want for the h2 element */
-  }
-
-  .event-subtitle{
-    text-align: center; /* Center the text horizontally */
-    margin-top: 2rem; /* Add some top margin for spacing */ 
-    font-size: 2rem;
   }
   
   /* body {
     background-color: #eeeeea;
   } */
   
-  
-  .committee_heads, .marketing, .treasurers, .social_heads, .op_heads, .design_heads, .content_prod, .content_writing, .tech_heads{
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    margin: 1.5rem auto;
+  .wrapper {
     align-items: center;
+    display: flex;
+    height: 100vh;
     justify-content: center;
-    flex-wrap: wrap;
+    width: 100%;
   }
-
-
+  
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 400px;
+    justify-content: flex-start;
+  }
   
   .card {
     align-items: flex-end;
@@ -49,15 +39,14 @@
     border-radius: .75rem;
     border-radius: 2rem;
     box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    cursor: pointer;
     display: flex;
-    margin: 0.5rem;
-    height: 400px;
-    width: 250px;
-    background-position: center;
+    margin: 0 10px;
+    overflow: hidden;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    width: 80px;
   }
-
-
-
+  
   .card > .row {
     color: white;
     display: flex;
@@ -66,24 +55,13 @@
   
   .card > .row > .icon {
     align-items: center;
+    background: #223;
+    border-radius: 50%;
     color: white;
     display: flex;
     justify-content: center;
-    margin: 0.5rem;
-    width: 3.5rem;
-    height: 3.5rem;
-  }
-
-  .icon>a>img{
-    width: 2.5rem;
-    object-fit: cover;
-    height: 2.5rem;
-    margin: 0 auto;
-  }
-
-  .icon>a>img:hover{
-    scale: 1.1;
-    transition: 250ms;
+    margin: 15px;
+    width: 50px;
   }
   
   .card > .row > .description {
@@ -91,113 +69,51 @@
     flex-direction: column;
     height: 80px;
     justify-content: center;
-    width: fit-content;
-    align-items: center;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(30px);
+    transition: all .3s ease;
+    transition-delay: .3s;
+    width: 520px;
   }
   
   .description p {
-    font-family: 'Poppins', sans-serif;
-    color: #00FFFF;
-    text-shadow: -1px 1px 2px black;
-    border-radius: 2rem;
-    padding: 0.25rem 0.35rem;
+    color: #b0b0ba;
+    padding-top: 5px;
   }
-  
   
   .description h4 {
     text-transform: uppercase;
-    font-size: 1rem;
-    text-shadow: -1px 1px 3px black;
   }
-
+  
+  input {
+    display: none;
+  }
+  
+  input:checked + label {
+    width: 600px;
+  }
+  
+  input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+  
   .card[for="c1"] {
-    background-image: url('../Team/Rishi_Patil.png');
+    background-image: url('./centenary.png');
   }
   
   .card[for="c2"] {
-    background-image: url('../Team/');
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/first-day-of-winter-solstice-2021-1638278570.jpg?crop=0.8337777777777778xw:1xh;center,top&resize=1200:*');
   }
   
   .card[for="c3"] {
-    background-image: url('../Team/Ira.jpg');
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/first-day-of-winter-solstice-2021-1638278570.jpg?crop=0.8337777777777778xw:1xh;center,top&resize=1200:*');
   }
   
   .card[for="c4"] {
-    background-image: url('../Team/');
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/first-day-of-winter-solstice-2021-1638278570.jpg?crop=0.8337777777777778xw:1xh;center,top&resize=1200:*');
   }
-
-  .card[for="c5"]{
-    background-image: url('../Team/Shashank_Dhurwey.jpg');
-  }
-  
-  .card[for="c6"]{
-    background-image: url('../Team/Vedank_Gaikwad.jpg');
-  }
-  
-  .card[for="c7"]{
-    background-image: url('../Team/Tanaya.jpg');
-  }
-  
-  .card[for="c8"]{
-    background-image: url('../Team/Aaron_Augustine.jpg');
-  }
-  
-  .card[for="c9"]{
-    background-image: url('../Team/Aom.jpeg');
-  }
-  .card[for="c10"]{
-    background-image: url('../Team/Keyur_Doshi.jpeg');
-  }
-  
-  .card[for="c11"]{
-    background-image: url('../Team/Akshay_Potkhule.jpg');
-  }
-  
-  .card[for="c12"]{
-    background-image: url('../Team/Nikhil_Soni.jpg');
-  }
-  
-  .card[for="c13"]{
-    background-image: url('../Team/Rushi_Jani.jpg');
-  }
-  
-  .card[for="c14"]{
-    background-image: url('../Team/Akshada.jpg');
-  }
-  
-  .card[for="c15"]{
-    background-image: url('../Team/Aayush_Deshpande.jpg');
-  }
-  
-  .card[for="c16"]{
-    background-image: url('../Team/');
-  }
-  
-  .card[for="c17"]{
-    background-image: url('../Team/');
-  }
-  
-  .card[for="c18"]{
-    background-image: url('../Team/Aashish.jpg');
-  }
-  
-  .card[for="c19"]{
-    background-image: url('../Team/Tanushri_Warade.jpg');
-  }
-  
-  .card[for="c20"]{
-    background-image: url('../Team/Priyanka_Kamble.jpg');
-  }
-  
-  .card[for="c21"]{
-    background-image: url('../Team/Aryan.jpg');
-  }
-  
-  .card[for="c22"]{
-    background-image: url('../Team/Sailie_Ghole.jpg');
-  }
-
-
   
   
   
