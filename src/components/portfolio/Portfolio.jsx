@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import cent from './Centenary_day.png';
+import cent from './centDay.png';
 import bloodDon from './bloodDonation.png';
 import beach from './beachClean.png';
 import career from './careergui.png';
@@ -53,7 +53,7 @@ const Single = ({ item }) => {
     <section >
       <div className="container">
         <div className="wrapper">
-          <div className="imageContainer" ref={ref}>
+          <div style={{padding:'20px'}} className="imageContainer" ref={ref}>
             <img src={item.img} alt="" />
           </div>
           <motion.div className="textContainer" style={{y}}>
