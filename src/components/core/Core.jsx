@@ -1,66 +1,54 @@
+import "./core.css";
 
-// import { CCard } from '@coreui/react'
-// import { CCardBody } from '@coreui/react'
-// import { CCardImage } from '@coreui/react'
-// import { CCardText } from '@coreui/react'
-// import { CButton } from '@coreui/react'
-// import { CCardTitle } from '@coreui/react'
-import linkedin_icon from '../Team/linkedin.png'
-
-import './core.css'
 const Core = () => {
-    return ( 
-      
-      <div>
-      <h2  className="event-title">
-        Core Committee
-      </h2>
-      <h3  className="event-subtitle">
-          Committe Heads
-      </h3>
-      <div className="committee_heads">
-        <label htmlFor="c1" className="card">
-          <div className="row">
-            <div className="icon"><a href="https://www.linkedin.com/in/rishi-patil-64b23b227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" ><img src={linkedin_icon} alt="" /></a></div>
-            <div className="description">
-              <h4>Rishi Patil </h4>
-              <p>Committee Head</p>
+  return (
+    <div>
+      <h2 className="event-title">Event gallery</h2>
+
+      <div className="wrapper">
+        <div className="container">
+          <input type="radio" name="slide" id="c1" />
+          <label htmlFor="c1" className="card">
+            <div className="row">
+              <div className="icon">1</div>
+              <div className="description">
+                <h4>Name XYZ</h4>
+                <p>Position</p>
+              </div>
             </div>
-          </div>
-        </label>
-        <label htmlFor="c2" className="card">
-          <div className="row">
-          <div className="icon"><a href="http://www.linkedin.com/in/raghav-korde" ><img src={linkedin_icon} alt="" /></a></div>
-            <div className="description">
-              <h4>Raghav Korde</h4>
-              <p>Committee Head</p>
+          </label>
+          <input type="radio" name="slide" id="c2" />
+          <label htmlFor="c2" className="card">
+            <div className="row">
+              <div className="icon">2</div>
+              <div className="description">
+                <h4>Digital Technology</h4>
+                <p>Gets better every day - stay tuned</p>
+              </div>
             </div>
-          </div>
-        </label>
-        </div>
-        <h3  className="event-subtitle">
-          Treasurers
-        </h3>
-        <div className="treasurers">
+          </label>
+          <input type="radio" name="slide" id="c3" />
           <label htmlFor="c3" className="card">
             <div className="row">
-            <div className="icon"><a href="https://www.linkedin.com/in/ira-sheth-731162282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" ><img src={linkedin_icon} alt="" /></a></div>
+              <div className="icon">3</div>
               <div className="description">
-                <h4>Ira Sheth</h4>
-                <p>Treasurer</p>
+                <h4>Globalization</h4>
+                <p>Help people all over the world</p>
               </div>
             </div>
           </label>
+          <input type="radio" name="slide" id="c4" />
           <label htmlFor="c4" className="card">
             <div className="row">
-            <div className="icon"><a href="https://www.linkedin.com/in/moh-owais-sheikh-271660256?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNXd4e0aITOiPUGcAS1Zg6Q%3D%3D" ><img src={linkedin_icon} alt="" /></a></div>
+              <div className="icon">4</div>
               <div className="description">
-                <h4>Mohd Owais Sheikh </h4>
-                <p>Treasurer</p>
+                <h4>New technologies</h4>
+                <p>Space engineering becomes more and more advanced</p>
               </div>
             </div>
           </label>
         </div>
+<<<<<<< HEAD
         <h3  className="event-subtitle">
           Social Media Heads
         </h3>
@@ -273,8 +261,11 @@ const Core = () => {
 
         
 
+=======
+>>>>>>> 062a5e4adfcfe58a1ee5aa3ceb130c5df4cebac0
       </div>
-     );
-}
- 
+    </div>
+  );
+};
+
 export default Core;
