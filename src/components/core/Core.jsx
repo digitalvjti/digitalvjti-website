@@ -230,7 +230,7 @@ const Core = () => {
           <div className="icon"><a href="https://www.linkedin.com/in/tanushri-warade-80a00222b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="linkedin_acc"><img src={linkedin_icon} alt="" /></a></div>
             <div className="description">
               <h4>Tanshuri Warade</h4>
-              <p>Content Writing</p>
+              <p>Content Writing Head</p>
             </div>
           </div>
         </label>
@@ -239,7 +239,7 @@ const Core = () => {
           <div className="icon"><a href="" className="linkedin_acc"><img src={linkedin_icon} alt="" /></a></div>
             <div className="description">
               <h4>Priyanka Kamble</h4>
-              <p>Content Writing</p>
+              <p>Content Writing Head</p>
             </div>
           </div>
         </label>
@@ -248,12 +248,26 @@ const Core = () => {
           <div className="icon"><a href="https://www.linkedin.com/in/aryan-shah-ba33b7238/" className="linkedin_acc"><img src={linkedin_icon} alt="" /></a></div>
             <div className="description">
               <h4>Aryan Shah</h4>
-              <p>Content Writing</p>
+              <p>Content Writing Head</p>
             </div>
           </div>
         </label>
         </div>
         <div className="content_prod">
+          <h3 className="event-subtitle">
+            Pr and Sponsor Head
+          </h3>
+          <div className="pr_and_spons">
+          <label htmlFor="c23" className="card">
+          <div className="row">
+          <div className="icon"><a href="https://www.linkedin.com/in/rushabh-shah-1778a6232?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="linkedin_acc"><img src={linkedin_icon} alt="" /></a></div>
+            <div className="description">
+              <h4>Rushabh Shah</h4>
+              <p>PR and Sponsor Head</p>
+            </div>
+          </div>
+        </label>
+          </div>
 
         </div>
 

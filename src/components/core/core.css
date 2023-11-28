@@ -31,7 +31,7 @@
   } */
   
   
-  .committee_heads, .marketing, .treasurers, .social_heads, .op_heads, .design_heads, .content_prod, .content_writing, .tech_heads{
+  .committee_heads, .marketing, .treasurers, .social_heads, .op_heads, .design_heads, .content_prod, .content_writing, .tech_heads, .pr_and_spons{
     display: flex;
     flex-direction: row;
     width: 100vw;
@@ -115,7 +115,7 @@
   }
   
   .card[for="c2"] {
-    background-image: url('../Team/');
+    background-image: url('../Team/raghav_korde.jpg');
   }
   
   .card[for="c3"] {
@@ -123,7 +123,7 @@
   }
   
   .card[for="c4"] {
-    background-image: url('../Team/');
+    background-image: url('../Team/Mohd_Owais_Sheikh.jpg');
   }
 
   .card[for="c5"]{
@@ -170,11 +170,11 @@
   }
   
   .card[for="c16"]{
-    background-image: url('../Team/');
+    background-image: url('../Team/Amisha_Sane.jpg');
   }
   
   .card[for="c17"]{
-    background-image: url('../Team/');
+    background-image: url('../Team/Mohd_Owais_Sheikh.jpg');
   }
   
   .card[for="c18"]{
@@ -195,6 +195,10 @@
   
   .card[for="c22"]{
     background-image: url('../Team/Sailie_Ghole.jpg');
+  }
+  
+  .card[for="c23"]{
+    background-image: url('../Team/Rushabh_Shah.jpg');
   }
 
 
