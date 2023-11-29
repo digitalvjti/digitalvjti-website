@@ -58,15 +58,15 @@ const Contact = () => {
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>hello@react.dev</span>
+          <span>digital.vjti@vjti.ac.in</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>
-          <span>Hello street New York</span>
+          <span>H R Mahajani Rd, Matunga, Mumbai, Maharashtra 400019</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
-          <span>+1 234 5678</span>
+          <span>+91 82378 77232</span>
         </motion.div>
       </motion.div>
       <div className="formContainer">
@@ -99,7 +99,7 @@ const Contact = () => {
             />
           </svg>
         </motion.div>
-        <motion.form
+        {/* <motion.form
           ref={formRef}
           onSubmit={sendEmail}
           initial={{ opacity: 0 }}
@@ -112,7 +112,7 @@ const Contact = () => {
           <button>Submit</button>
           {error && "Error"}
           {success && "Success"}
-        </motion.form>
+        </motion.form> */}
       </div>
     </motion.div>
   );
