@@ -58,7 +58,7 @@ const Contact = () => {
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>digital.vjti@vjti.ac.in</span>
+          <email>digital.vjti@vjti.ac.in</email> 
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>
@@ -66,7 +66,8 @@ const Contact = () => {
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
-          <span>+91 82378 77232</span>
+          <span>+91 8237877232 : Raghav Korde </span> <br />
+          <span>+91 9403664396 : Rishi Patil</span>
         </motion.div>
       </motion.div>
       <div className="formContainer">
