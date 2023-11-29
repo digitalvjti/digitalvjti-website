@@ -27,12 +27,12 @@ const App = () => {
       <section>
         <Services />
       </section>
-      {/* <section id="Contact">
+      <section id="Contact">
         <Contact />
       </section>
       <section id="CoreMembers">
         <Core />
-      </section>  */}
+      </section> 
     </div>
   );
 };
