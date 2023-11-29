@@ -36,8 +36,8 @@ const Services = () => {
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
-          I focus on helping your brand grow
-          <br /> and move forward
+          About Digital VJTI 
+          <br /> Digital transformation for VJTI
         </p>
         <hr />
       </motion.div>
@@ -45,68 +45,37 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas
+            <motion.b whileHover={{color:"orange"}}>About </motion.b> Digital VJTI
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{color:"orange"}}>For Your</motion.b> Business.
+            <motion.b style={{color:"orange"}}>what we do</motion.b> 
           </h1>
-          <button>WHAT WE DO?</button>
+          {/* <h1>WHAT WE DO?</h1> */}
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
+        
+        
+        
         <motion.div
           className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
+          style={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+          <h1>About us  
+            :  At Digital VJTI, we take pride in capturing the vibrant essence of VJTI's life 
+            
+            and propelling it into the digital realm. 
+            </h1>
+            <p>
+            As the torchbearers of technological evolution, we are dedicated to digitizing the landscape of VJTI.
+
+Our commitment extends beyond digital transformation; we are catalysts for innovation and learning. Digital VJTI is not just a platform—it's a community that thrives on knowledge sharing and collaboration. Through our hackathons, workshops, and events, we empower individuals to explore the boundless possibilities that technology offers.
+         
+        
           </p>
-          <button>Go</button>
-        </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
-          </p>
-          <button>Go</button>
-        </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
-          </p>
-          <button>Go</button>
-        </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
-          </p>
-          <button>Go</button>
+          {/* <button>Go</button> */}
         </motion.div>
       </motion.div>
     </motion.div>
