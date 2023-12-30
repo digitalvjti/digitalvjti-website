@@ -36,7 +36,7 @@ const Services = () => {
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
-          About Digital VJTI 
+          About Digital VJTI
           <br /> Digital transformation for VJTI
         </p>
         <hr />
@@ -45,35 +45,36 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <motion.b whileHover={{color:"orange"}}>About </motion.b> Digital VJTI
+            <motion.b whileHover={{ color: "orange" }}>About </motion.b> Digital
+            VJTI
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b style={{color:"orange"}}>what we do</motion.b> 
+            <motion.b style={{ color: "orange" }}>what we do</motion.b>
           </h1>
           {/* <h1>WHAT WE DO?</h1> */}
         </div>
       </motion.div>
-      <motion.div className="listContainer" variants={variants}>
-        
-        
-        
+      <motion.div className="listContainer" variants={variants} style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
         <motion.div
           className="box"
-          style={{ background: "lightgray", color: "black" }}
+          style={{ background: "transparent", color: "white",border:'2px solid grey',borderRadius:'50px',width:'90%',height:'95%' }}
         >
-          <h1>About us  
-            :  At Digital VJTI, we take pride in capturing the vibrant essence of VJTI's life 
-            
-            and propelling it into the digital realm. 
-            </h1>
-            <p>
-            As the torchbearers of technological evolution, we are dedicated to digitizing the landscape of VJTI.
-
-Our commitment extends beyond digital transformation; we are catalysts for innovation and learning. Digital VJTI is not just a platform—it's a community that thrives on knowledge sharing and collaboration. Through our hackathons, workshops, and events, we empower individuals to explore the boundless possibilities that technology offers.
-         
-        
+          <h1>
+            At Digital VJTI, we take pride in capturing the vibrant essence of
+            VJTI's life and propelling it into the digital realm.
+          </h1>
+          <p>
+            <br />
+            <br />
+            As the torchbearers of technological evolution, we are dedicated to
+            digitizing the landscape of VJTI.Our commitment extends beyond
+            digital transformation; we are catalysts for innovation and
+            learning. Digital VJTI is not just a platform—it's a community that
+            thrives on knowledge sharing and collaboration. Through our
+            hackathons, workshops, and events, we empower individuals to explore
+            the boundless possibilities that technology offers.
           </p>
           {/* <button>Go</button> */}
         </motion.div>
