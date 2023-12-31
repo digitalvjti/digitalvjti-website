@@ -1,0 +1,26 @@
+.toggle-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    position:block;
+    height: 1px;
+    width: 1px;
+  }
+  
+  .toggle-button svg {
+    display: block;
+    position: absolute; /* Set the SVG to absolute positioning */
+    top: 55%; /* Position the SVG in the middle vertically */
+    left: 50%; /* Position the SVG in the middle horizontally */
+    transform: translate(-50%, -50%); /* Center the SVG inside the button */
+  }
+  
+  .toggle-button svg path {
+    transition: stroke-dasharray 0.3s ease-in-out;
+  }
+  
+  .toggle-button:hover svg path {
+    stroke-dasharray: 50;
+  }
+  

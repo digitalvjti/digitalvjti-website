@@ -50,7 +50,7 @@ const Hero = () => {
   return (
     <motion.div className="hero" style={{ textAlign: "center" }}>
       <motion.div style={{ marginBottom: "4vh" }}>
-        <motion.h2>Empowering your digital dreams!!</motion.h2>
+        <motion.h2 style={{fontSize:'75px',fontFamily:'cursive'}}>Empowering your digital dreams</motion.h2>
       </motion.div>
       <div className="imageContainer">
         <img
@@ -58,7 +58,7 @@ const Hero = () => {
           alt=""
         />
       </div>
-      <motion.h1 variants={textVariants} style={{ fontSize: "100px" }}>
+      <motion.h1 variants={textVariants} style={{ fontSize: "90px",fontFamily:'cursive'}}>
         Digital VJTI
       </motion.h1>
       <motion.div
