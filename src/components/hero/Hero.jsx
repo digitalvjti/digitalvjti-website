@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import { useCallback } from "react";
+import hall from './hallmark.png';
+import digi from './digital_logo.png';
 const textVariants = {
   initial: {
     x: -500,
@@ -49,25 +51,39 @@ const Hero = () => {
   }, []);
   return (
     <motion.div className="hero" style={{ textAlign: "center" }}>
-      <motion.div style={{ marginBottom: "4vh" }}>
-        <motion.h2 style={{fontSize:'75px',fontFamily:'cursive'}}>Empowering your digital dreams</motion.h2>
-      </motion.div>
-      <div className="imageContainer">
+      {/* <motion.div style={{ marginBottom: "4vh" }}>
+        <motion.h2 style={{fontSize:'75px',fontFamily:'cursive'}}></motion.h2>
+      </motion.div> */}
+      <div className="imageContainer"style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <img
-          src="https://socialgroup.vjti.ac.in/Assets/Allimages/Digital/digital.png"
+          src={hall}
           alt=""
+          style={{ width: '100%', height: 'auto', maxWidth: '800px'}}
         />
       </div>
-      <motion.h1 variants={textVariants} style={{ fontSize: "90px",fontFamily:'cursive'}}>
-        Digital VJTI
-      </motion.h1>
+      <div  style={{
+          position: 'fixed',
+          top: '2%',
+          right: '1%',
+        }}>
+        <img
+          src={digi}
+          alt="Digital Logo"
+          style={{ width: '50%', // Adjust the percentage based on your design
+          height: 'auto',
+          maxWidth: '150px', }}
+        />
+      </div>
+      {/* <motion.h1 variants={textVariants} style={{ fontSize: "90px",fontFamily:'cursive'}}>
+        
+      </motion.h1> */}
       <motion.div
         className="slidingTextContainer"
         variants={sliderVariants}
         initial="initial"
         animate="animate"
       >
-        Create content to improve digital reach of VJTI
+       
       </motion.div>
       <Particles
         id="tsparticles"
