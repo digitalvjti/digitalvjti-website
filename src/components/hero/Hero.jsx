@@ -54,7 +54,7 @@ const Hero = () => {
       {/* <motion.div style={{ marginBottom: "4vh" }}>
         <motion.h2 style={{fontSize:'75px',fontFamily:'cursive'}}></motion.h2>
       </motion.div> */}
-      <div className="imageContainer"style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <div className="imageContainer"style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh' }}>
         <img
           src={hall}
           alt=""
@@ -71,7 +71,8 @@ const Hero = () => {
           alt="Digital Logo"
           style={{ width: '50%', // Adjust the percentage based on your design
           height: 'auto',
-          maxWidth: '150px', }}
+          maxWidth: '150px',
+          }}
         />
       </div>
       {/* <motion.h1 variants={textVariants} style={{ fontSize: "90px",fontFamily:'cursive'}}>

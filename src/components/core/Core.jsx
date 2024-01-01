@@ -13,10 +13,10 @@ const Core = () => {
       
       <div>
       <h2  className="event-title">
-        Core Committee
+        Team
       </h2>
       <h3  className="event-subtitle">
-          Committe Heads
+        Secretaries
       </h3>
       <div className="committee_heads">
         <label htmlFor="c1" className="card">
@@ -24,7 +24,7 @@ const Core = () => {
             <div className="icon"><a href="https://www.linkedin.com/in/rishi-patil-64b23b227/" ><img src={linkedin_icon} alt="" /></a></div>
             <div className="description">
               <h4>Rishi Patil </h4>
-              <p>Committee Head</p>
+              <p>Secretary</p>
             </div>
           </div>
         </label>
@@ -33,7 +33,7 @@ const Core = () => {
           <div className="icon"><a href="http://www.linkedin.com/in/raghav-korde" ><img src={linkedin_icon} alt="" /></a></div>
             <div className="description">
               <h4>Raghav Korde</h4>
-              <p>Committee Head</p>
+              <p>Secretary</p>
             </div>
           </div>
         </label>
@@ -254,7 +254,7 @@ const Core = () => {
         </label>
         </div>
         <h3 className="event-subtitle">
-          Pr and Sponsor Head
+          PR and Sponsor Head
         </h3>
         <div className="pr_and_spons">
         <label htmlFor="c23" className="card">
@@ -262,7 +262,7 @@ const Core = () => {
           <div className="icon"><a href="https://www.linkedin.com/in/rushabh-shah-1778a6232" className="linkedin_acc"><img src={linkedin_icon} alt="" /></a></div>
             <div className="description">
               <h4>Rushabh Shah</h4>
-              <p>Pr and Sponsor Head</p>
+              <p>PR and Sponsor Head</p>
             </div>
           </div>
         </label>
